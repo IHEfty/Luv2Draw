@@ -5,13 +5,13 @@
     <td></td>
   </tr>
   <tr>
-    <td><img src="./img/circle.png" alt="Image 00" width="550"></td>
+    <td><img src="./img/circle.png" alt="Image 00" width="650"></td>
   </tr>
   <tr>
-    <td><img src="./img/circle1.png" alt="Image 01" width="550"></td>
+    <td><img src="./img/circle1.png" alt="Image 01" width="650"></td>
   </tr>
   <tr>
-    <td><img src="./img/cube.png" alt="Image 02" width="550"></td>
+    <td><img src="./img/cube.png" alt="Image 02" width="650"></td>
   </tr>
 </table>
 A simple web tool to help artists visualize perspective by overlaying 3D shapes on reference images.
