@@ -70,6 +70,8 @@ Potential additions:
 No installation needed - just open `index.html` in a browser. For local development:
 1. Clone the repo
 2. Open `index.html` in a browser
+   
+Or, Simply visit the live demo: 👉 [Here](https://ihefty.github.io/Luv2Draw/)
 
 ## License
 
