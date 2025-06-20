@@ -63,7 +63,7 @@ Potential additions:
 - Save/load configurations
 - Measurement tools
 - Grid overlays
-- Multiple reference images
+- Multiple reference images (not available right now)
 
 ## Installation
 
