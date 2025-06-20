@@ -1,4 +1,4 @@
-# Luv2Drow
+# Luv2Draw
 
 ![Demo Screenshot](demo-screenshot.png) <!-- Add a screenshot later -->
 
