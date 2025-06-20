@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>3D Ref Tool - WIP</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <button id="toggle-controls">
+    <!-- Simple burger icon to toggle UI panel -->
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <path d="M3 12h18M3 6h18M3 18h18"></path>
+    </svg>
+    UI
+  </button>
+
+  <div id="controls">
+    <div id="image-upload-container">
+      <label for="bgInput">
+        <!-- Upload icon -->
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h7"></path>
+          <line x1="16" y1="5" x2="22" y2="5"></line>
+          <line x1="19" y1="2" x2="19" y2="8"></line>
+          <circle cx="9" cy="9" r="2"></circle>
+          <path d="M21 15l-3.086-3.086a2 2 0 0 0-2.828 0L6 21"></path>
+        </svg>
+        <span>Upload Reference Image</span>
+        <input type="file" id="bgInput" accept="image/*" style="display: none;" />
+      </label>
+    </div>
+
+    <!-- Probably should refactor this later -->
+    <div class="control-group">
+      <h4>Image Settings</h4>
+      <label>Scale: <span class="value-display"><span></span><span>0.1 to 3.0</span></span></label>
+      <input type="range" id="imgScale" min="0.1" max="3" step="0.01" value="1" />
+
+      <label>Position X:</label>
+      <input type="range" id="imgPosX" min="-1000" max="1000" step="1" value="0" />
+
+      <label>Position Y:</label>
+      <input type="range" id="imgPosY" min="-1000" max="1000" step="1" value="0" />
+
+      <label>Width:</label>
+      <input type="range" id="imgWidth" min="100" max="2000" step="10" value="1000" />
+
+      <label>Height:</label>
+      <input type="range" id="imgHeight" min="0" max="2000" step="10" value="0" />
+      <small>Use 0 to auto-scale height to image's aspect ratio</small>
+    </div>
+
+    <div class="control-group">
+      <h4>3D Model</h4>
+      <label>Shape</label>
+      <select id="shapeSelect">
+        <option value="loomis">Circle</option>
+        <option value="cube">Cube</option>
+      </select>
+
+      <label>Opacity:</label>
+      <input type="range" id="opacity" min="0" max="1" step="0.01" value="0.9" />
+
+      <label>Rotate X:</label>
+      <input type="range" id="rotX" min="0" max="360" step="1" value="0" />
+
+      <label>Rotate Y:</label>
+      <input type="range" id="rotY" min="0" max="360" step="1" value="0" />
+
+      <label>Rotate Z:</label>
+      <input type="range" id="rotZ" min="0" max="360" step="1" value="0" />
+    </div>
+  </div>
+
+  <img id="bgImg" src="https://threejs.org/examples/textures/uv_grid_opengl.jpg" />
+
+  <div id="canvas-container"></div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+  <script src="./main.js" defer></script>
+</body>
+</html>
