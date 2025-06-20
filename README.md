@@ -56,14 +56,14 @@ Built with:
 - Plain HTML/CSS for the UI
 - No dependencies beyond Three.js
 
-## Future Improvements
+## Future Improvements (not available right now)
 
 Potential additions:
 - More 3D shapes (cylinders, planes, etc.)
 - Save/load configurations
 - Measurement tools
 - Grid overlays
-- Multiple reference images (not available right now)
+- Multiple reference images 
 
 ## Installation
 
